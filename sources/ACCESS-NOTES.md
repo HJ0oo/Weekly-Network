@@ -13,13 +13,18 @@
 |---|---|---|
 | TTA 목록 (committee.tta.or.kr) | 동작 | curl + `iconv //IGNORE` |
 | TTA 본문 PDF (weekly.tta.or.kr) | **차단(403)** | 제목만 쓰고 웹검색으로 보완 |
-| arXiv API (export.arxiv.org) | 불안정(429 잦음) | 1회 시도 후 목록 페이지로 전환 |
+| arXiv API (export.arxiv.org) | 동작(2026-09-21엔 429 없이 성공) | 그래도 1회 시도 후 안 되면 목록 페이지로 전환 |
 | arXiv 목록·초록 페이지 (arxiv.org) | 동작 | WebFetch로 `/list/...?skip=N`, `/abs/ID` |
 | 3GPP (www.3gpp.org) | **차단** | 웹검색으로 대체 |
 | IITP (itfind.or.kr) | 동작 | WebFetch로 weekly list.do |
 | IITP (iitp.kr) | 목록 안 보임(JS) | itfind 쪽을 쓸 것 |
-| IEEE (ieeexplore / comsoc / spectrum) | **차단(3주 연속)** | 1회만 시도, 안 되면 포기 |
+| IEEE (ieeexplore / comsoc / spectrum) | **차단(4주 연속)** | 1회만 시도, 안 되면 포기 |
 | 국내 언론 일부 (edaily, boannews 등) | **본문 차단** | 검색 스니펫으로 확인 |
+| 한국경제(hankyung.com) | **본문 차단(신규 확인, 09-21)** | 검색 스니펫으로 확인 |
+| 이포커스(e-focus.co.kr) | **본문 차단(신규 확인, 09-21)** | 검색 스니펫으로 확인 |
+| 뉴스1(news1.kr) | **본문 차단(신규 확인, 09-21)** | 검색 스니펫으로 확인 |
+| 네이트뉴스(m.news.nate.com) | **본문 차단(신규 확인, 09-21)** | 검색 스니펫으로 확인, 링크만 인용 |
+| IEEE ComSoc 기술블로그(techblog.comsoc.org) | **본문 차단(신규 확인, 09-21)** | 검색 스니펫으로 확인 |
 
 ---
 
@@ -55,8 +60,14 @@
 
 ### IEEE 계열
 - `ieeexplore.ieee.org`, `www.comsoc.org`, `spectrum.ieee.org` 모두 EGRESS_BLOCKED.
-- 2026-08-25, 09-01, 09-15 **3주 연속 실패.** 매주 같은 시도를 반복하지 말 것.
+- 2026-08-25, 09-01, 09-15, 09-21 **4주 연속 실패.** 매주 같은 시도를 반복하지 말 것.
+- `techblog.comsoc.org`도 2026-09-21에 EGRESS_BLOCKED로 신규 확인됨. 웹검색 스니펫으로만 대체 가능.
 - 대안: 같은 연구의 arXiv 공개본을 찾거나, 그냥 그 주는 생략한다.
+
+### 이번 주(09-21) 새로 확인된 차단 도메인
+- `www.hankyung.com`, `www.e-focus.co.kr`, `www.news1.kr`, `m.news.nate.com` 모두 WebFetch에서 EGRESS_BLOCKED.
+- 이 도메인들은 WebSearch 결과 스니펫만으로 날짜·내용을 확인하고, 링크는 인용하되 직접 열람은 못 한다고 가정할 것.
+- TTA·IITP 모두 이번 주 **신규 호가 없었다** (지난주와 동일한 제1307호·제2220호). 매주 목록을 확인하되, 같은 번호면 새 기사로 쓰지 말 것.
 
 ### 국내 언론
 - `edaily.co.kr`, `m.boannews.com` 등 여러 매체가 본문 접근 차단이다. WebSearch 결과 스니펫으로 내용을 확인하라.
