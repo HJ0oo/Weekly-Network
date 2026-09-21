@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" width="720" height="280" role="img" aria-label="그림 설명을 여기에 적는다">
+  <!-- ============================================================
+       주간 리포트 그림 템플릿 (값의 크기·범위를 보여줄 때 복사해 쓴다)
+       사용법: 이 파일을 assets/YYYY-MM-DD-<주제>.svg 로 복사한 뒤 내용만 바꾼다.
+       지켜야 할 것
+         1) 아래 흰색 배경 사각형을 지우지 마라 (다크 모드에서 글씨가 사라진다)
+         2) 축 라벨에 단위를 반드시 적는다 (예: 신호 세기 (dBm))
+         3) 색은 3가지 이하, 색으로만 구분하지 말고 글자 라벨을 같이 붙인다
+         4) 글자는 13px 이상
+       ============================================================ -->
+
+  <!-- 1) 배경: 절대 지우지 말 것 -->
+  <rect x="0" y="0" width="720" height="280" fill="#ffffff"/>
+
+  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
+
+    <!-- 2) 제목: 이 그림이 무엇을 보여주는지 -->
+    <text x="24" y="38" font-size="17" font-weight="bold" fill="#1a1a1a">
+      제목을 여기에 (예: 신호 세기는 왜 음수로 표시되나)
+    </text>
+
+    <!-- 3) 구간 띠: 값의 범위를 색으로 구분하되 글자 라벨을 반드시 같이 -->
+    <rect x="70" y="80"  width="200" height="46" fill="#d9e8f5" stroke="#5b8db8"/>
+    <rect x="270" y="80" width="200" height="46" fill="#eef1f4" stroke="#8a949e"/>
+    <rect x="470" y="80" width="180" height="46" fill="#f7e2e2" stroke="#c07777"/>
+
+    <text x="170" y="108" font-size="14" fill="#1a1a1a" text-anchor="middle">구간 A (예: 잘 터짐)</text>
+    <text x="370" y="108" font-size="14" fill="#1a1a1a" text-anchor="middle">구간 B (예: 보통)</text>
+    <text x="560" y="108" font-size="14" fill="#1a1a1a" text-anchor="middle">구간 C (예: 끊김)</text>
+
+    <!-- 4) 축: 선 + 눈금 + 눈금값 -->
+    <line x1="70" y1="150" x2="650" y2="150" stroke="#1a1a1a" stroke-width="1.5"/>
+    <g stroke="#1a1a1a" stroke-width="1.5">
+      <line x1="70"  y1="150" x2="70"  y2="158"/>
+      <line x1="215" y1="150" x2="215" y2="158"/>
+      <line x1="360" y1="150" x2="360" y2="158"/>
+      <line x1="505" y1="150" x2="505" y2="158"/>
+      <line x1="650" y1="150" x2="650" y2="158"/>
+    </g>
+    <g font-size="13" fill="#1a1a1a" text-anchor="middle">
+      <text x="70"  y="176">-50</text>
+      <text x="215" y="176">-70</text>
+      <text x="360" y="176">-90</text>
+      <text x="505" y="176">-110</text>
+      <text x="650" y="176">-130</text>
+    </g>
+
+    <!-- 5) 축 이름 + 단위: 단위 없는 축은 금지 -->
+    <text x="360" y="202" font-size="14" font-weight="bold" fill="#1a1a1a" text-anchor="middle">
+      신호 세기 (dBm) — 오른쪽으로 갈수록 약하다
+    </text>
+
+    <!-- 6) 강조 표시: 독자가 눈으로 따라갈 지점 하나 -->
+    <line x1="290" y1="70" x2="290" y2="150" stroke="#c0392b" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="298" y="66" font-size="13" fill="#c0392b">여기가 무엇인지 한 마디</text>
+
+    <!-- 7) 보조 설명 한 줄 (선택). 긴 설명은 그림이 아니라 본문에 쓴다 -->
+    <text x="24" y="244" font-size="13" fill="#444444">
+      보조 설명이 필요하면 한 줄만. 두 줄이 넘으면 본문으로 옮겨라.
+    </text>
+  </g>
+</svg>
