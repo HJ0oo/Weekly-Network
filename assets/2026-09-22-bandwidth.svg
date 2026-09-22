@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" role="img" aria-label="대역폭이 넓을수록 한 번에 더 많은 데이터를 실어 나를 수 있음을 보여주는 그림">
+
+  <!-- 배경 -->
+  <rect x="0" y="0" width="720" height="400" fill="#ffffff"/>
+
+  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
+
+    <!-- 제목 -->
+    <text x="24" y="32" font-size="17" font-weight="bold" fill="#1a1a1a">
+      대역폭이 넓을수록 한 번에 더 많은 데이터가 지나간다
+    </text>
+    <text x="24" y="54" font-size="13" fill="#444444">
+      네모 한 칸을 "동시에 보낼 수 있는 데이터 한 조각"이라고 하자
+    </text>
+
+    <!-- LTE 대역 (좁음) -->
+    <text x="24" y="100" font-size="14" font-weight="bold" fill="#2a6fb0">LTE 대역</text>
+    <text x="24" y="118" font-size="12" fill="#666666">(폭 20MHz)</text>
+    <rect x="150" y="108" width="80" height="54" fill="#eef1f4" stroke="#5b8db8" stroke-width="1.5"/>
+    <rect x="151.5" y="109.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="191.5" y="109.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="151.5" y="136.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="191.5" y="136.5" width="37.0" height="24.0" fill="#5b8db8"/>
+    <line x1="150" y1="180" x2="230" y2="180" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="150" y1="174" x2="150" y2="186" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="230" y1="174" x2="230" y2="186" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="190" y="200" font-size="12" fill="#1a1a1a" text-anchor="middle">폭 20MHz</text>
+
+    <!-- 5G 대역 (넓음) -->
+    <text x="24" y="240" font-size="14" font-weight="bold" fill="#2a6fb0">5G 대역</text>
+    <text x="24" y="258" font-size="12" fill="#666666">(폭 100MHz)</text>
+    <rect x="150" y="248" width="400" height="54" fill="#eef1f4" stroke="#5b8db8" stroke-width="1.5"/>
+    <rect x="151.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="191.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="231.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="271.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="311.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="351.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="391.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="431.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="471.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="511.5" y="249.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="151.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="191.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="231.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="271.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="311.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="351.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="391.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="431.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="471.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+      <rect x="511.5" y="276.5" width="37.0" height="24.0" fill="#5b8db8"/>
+    <line x1="150" y1="320" x2="550" y2="320" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="150" y1="314" x2="150" y2="326" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="550" y1="314" x2="550" y2="326" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="350" y="340" font-size="12" fill="#1a1a1a" text-anchor="middle">폭 100MHz (LTE의 5배)</text>
+
+    <!-- 하단 설명 -->
+    <text x="24" y="378" font-size="13" fill="#444444">
+      네모 칸 수가 5배 많다 — 폭이 5배 넓으면 같은 시간에 나를 수 있는 데이터도 약 5배 많아진다
+    </text>
+  </g>
+</svg>
