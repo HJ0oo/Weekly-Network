@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img" aria-label="주파수가 높아질수록 전파가 닿는 거리는 짧아지고, 확보할 수 있는 폭은 넓어지는 관계를 보여주는 막대그래프">
+  <rect x="0" y="0" width="720" height="320" fill="#ffffff"/>
+  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
+    <text x="24" y="34" font-size="17" font-weight="bold" fill="#1a1a1a">주파수가 높아지면 멀리 가는 힘은 줄고, 쓸 수 있는 폭은 늘어난다</text>
+
+    <rect x="24" y="50" width="16" height="16" fill="#d9e8f5" stroke="#5b8db8"/>
+    <text x="46" y="63" font-size="14" fill="#1a1a1a">파랑: 전파가 닿는 거리</text>
+    <rect x="240" y="50" width="16" height="16" fill="#f7e2e2" stroke="#c07777"/>
+    <text x="262" y="63" font-size="14" fill="#1a1a1a">분홍: 확보하기 쉬운 대역폭(폭)</text>
+
+    <!-- 막대: 기준선 y=240 -->
+    <g stroke-width="1.5">
+      <rect x="104" y="110" width="44" height="130" fill="#d9e8f5" stroke="#5b8db8"/>
+      <rect x="152" y="215" width="44" height="25" fill="#f7e2e2" stroke="#c07777"/>
+
+      <rect x="254" y="145" width="44" height="95" fill="#d9e8f5" stroke="#5b8db8"/>
+      <rect x="302" y="185" width="44" height="55" fill="#f7e2e2" stroke="#c07777"/>
+
+      <rect x="404" y="165" width="44" height="75" fill="#d9e8f5" stroke="#5b8db8"/>
+      <rect x="452" y="160" width="44" height="80" fill="#f7e2e2" stroke="#c07777"/>
+
+      <rect x="554" y="220" width="44" height="20" fill="#d9e8f5" stroke="#5b8db8"/>
+      <rect x="602" y="110" width="44" height="130" fill="#f7e2e2" stroke="#c07777"/>
+    </g>
+
+    <g font-size="13" fill="#1a1a1a" text-anchor="middle">
+      <text x="126" y="104">멀리</text>
+      <text x="174" y="209">좁음</text>
+      <text x="276" y="139">중간</text>
+      <text x="324" y="179">보통</text>
+      <text x="426" y="159">짧음</text>
+      <text x="474" y="154">넓음</text>
+      <text x="576" y="214">매우 짧음</text>
+      <text x="624" y="104">매우 넓음</text>
+    </g>
+
+    <!-- 가로축 -->
+    <line x1="80" y1="240" x2="670" y2="240" stroke="#1a1a1a" stroke-width="1.5"/>
+    <g font-size="13" fill="#1a1a1a" text-anchor="middle">
+      <text x="150" y="262">0.8GHz</text>
+      <text x="150" y="280" font-size="13">(LTE 800MHz)</text>
+      <text x="300" y="262">2.6GHz</text>
+      <text x="300" y="280">(LTE 2.6GHz)</text>
+      <text x="450" y="262">3.5GHz</text>
+      <text x="450" y="280">(5G 중대역)</text>
+      <text x="600" y="262">28GHz</text>
+      <text x="600" y="280">(5G 초고주파)</text>
+    </g>
+    <text x="375" y="304" font-size="14" font-weight="bold" fill="#1a1a1a" text-anchor="middle">주파수 (GHz) — 오른쪽일수록 높다 (칸 간격은 비례하지 않음)</text>
+    <text x="24" y="90" font-size="13" fill="#444444">막대 높이는 개념 비교용 상대 크기이며 실측값이 아니다</text>
+  </g>
+</svg>
