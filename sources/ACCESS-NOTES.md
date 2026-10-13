@@ -3,7 +3,7 @@
 매주 루틴이 **시작할 때 읽고, 끝날 때 갱신하는** 파일이다.
 목적은 하나: **지난주에 이미 실패한 방법을 이번 주에 다시 시도하느라 시간을 낭비하지 않는 것.**
 
-최종 확인: 2026-09-22
+최종 확인: 2026-10-13
 
 ---
 
@@ -16,7 +16,7 @@
 | arXiv API (export.arxiv.org) | 동작(2026-09-21·09-22 모두 429 없이 성공) | 그래도 1회 시도 후 안 되면 목록 페이지로 전환 |
 | arXiv 목록·초록 페이지 (arxiv.org) | 동작 | WebFetch로 `/list/...?skip=N`, `/abs/ID` |
 | 3GPP (www.3gpp.org) | **직접 접근 차단** | 웹검색으로 대체 — 09-22엔 RAN#113 세부 내용까지 확인 성공 |
-| IITP (itfind.or.kr) | 동작 | WebFetch로 weekly list.do |
+| IITP (itfind.or.kr) | 동작(10-13 첫 요청 503, 재시도 성공) | WebFetch로 weekly list.do |
 | IITP (iitp.kr) | 목록 안 보임(JS) | itfind 쪽을 쓸 것 |
 | IEEE (ieeexplore / comsoc / spectrum) | **차단(5주 연속)** | 1회만 시도, 안 되면 포기 |
 | 국내 언론 일부 (edaily, boannews 등) | **본문 차단** | 검색 스니펫으로 확인 |
@@ -26,6 +26,7 @@
 | 네이트뉴스(m.news.nate.com) | **본문 차단(09-21 확인)** | 검색 스니펫으로 확인, 링크만 인용 |
 | IEEE ComSoc 기술블로그(techblog.comsoc.org) | **본문 차단(09-21 확인)** | 검색 스니펫으로 확인 |
 | finance.yahoo.com, investing.com(kr 포함) | **본문 차단(신규 확인, 09-22)** | 검색 스니펫으로 확인, investing.com은 링크만 인용 가능 |
+| news.samsung.com | **DNS 오류(신규, 10-13)** | 검색 스니펫·RCR Wireless로 대체 |
 | koreadaily.com, news.koreanair.com, radioseoul1650.com, wsau.com | **본문 차단(신규 확인, 09-22)** | 검색 스니펫으로 확인 |
 | electimes.com, theguru.co.kr, thefastmode.com, telecomreviewasia.com, free6gtraining.com | **본문 차단(신규 확인, 09-22)** | 검색 스니펫으로 확인 |
 
