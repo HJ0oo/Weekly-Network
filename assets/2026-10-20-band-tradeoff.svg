@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" role="img" aria-label="주파수가 낮을수록 멀리 가고 벽을 잘 통과하며, 높을수록 넓은 폭을 확보하기 쉽다는 것을 보여주는 그림">
+  <rect x="0" y="0" width="720" height="360" fill="#ffffff"/>
+  <g font-family="Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR, sans-serif">
+    <text x="24" y="34" font-size="17" font-weight="bold" fill="#1a1a1a">낮은 주파수는 멀리 가고, 높은 주파수는 넓은 폭을 얻기 쉽다</text>
+    <text x="24" y="56" font-size="13" fill="#444444">세 대역의 상대적 비교 (실제 숫자가 아니라 경향이다)</text>
+
+    <!-- 대역 띠 -->
+    <rect x="70" y="80" width="170" height="50" fill="#d9e8f5" stroke="#5b8db8"/>
+    <rect x="270" y="80" width="170" height="50" fill="#eef1f4" stroke="#8a949e"/>
+    <rect x="470" y="80" width="180" height="50" fill="#f7e2e2" stroke="#c07777"/>
+    <g font-size="14" fill="#1a1a1a" text-anchor="middle">
+      <text x="155" y="102">저대역</text><text x="155" y="120">약 0.7GHz</text>
+      <text x="355" y="102">중대역</text><text x="355" y="120">약 3.5GHz</text>
+      <text x="560" y="102">고대역</text><text x="560" y="120">약 28GHz</text>
+    </g>
+
+    <!-- 도달 거리 막대 -->
+    <text x="24" y="170" font-size="14" font-weight="bold" fill="#1a1a1a">멀리 가는 정도 / 벽 통과</text>
+    <rect x="70" y="180" width="170" height="22" fill="#5b8db8"/>
+    <rect x="270" y="180" width="100" height="22" fill="#8a949e"/>
+    <rect x="470" y="180" width="40" height="22" fill="#c07777"/>
+    <g font-size="13" fill="#1a1a1a">
+      <text x="248" y="196">매우 좋음</text>
+      <text x="378" y="196">보통</text>
+      <text x="518" y="196">약함</text>
+    </g>
+
+    <!-- 폭 확보 막대 -->
+    <text x="24" y="238" font-size="14" font-weight="bold" fill="#1a1a1a">넓은 폭(대역폭)을 얻을 여지</text>
+    <rect x="70" y="248" width="40" height="22" fill="#5b8db8"/>
+    <rect x="270" y="248" width="100" height="22" fill="#8a949e"/>
+    <rect x="470" y="248" width="170" height="22" fill="#c07777"/>
+    <g font-size="13" fill="#1a1a1a">
+      <text x="118" y="264">좁음</text>
+      <text x="378" y="264">보통</text>
+    </g>
+    <text x="570" y="264" font-size="13" fill="#1a1a1a" text-anchor="middle">매우 넓음</text>
+
+    <!-- 축 -->
+    <line x1="70" y1="312" x2="650" y2="312" stroke="#1a1a1a" stroke-width="1.5"/>
+    <g stroke="#1a1a1a" stroke-width="1.5">
+      <line x1="155" y1="312" x2="155" y2="319"/>
+      <line x1="355" y1="312" x2="355" y2="319"/>
+      <line x1="560" y1="312" x2="560" y2="319"/>
+    </g>
+    <g font-size="13" fill="#1a1a1a" text-anchor="middle">
+      <text x="155" y="336">0.7</text>
+      <text x="355" y="336">3.5</text>
+      <text x="560" y="336">28</text>
+    </g>
+    <text x="680" y="340" font-size="13" font-weight="bold" fill="#1a1a1a" text-anchor="end">주파수 (GHz) →</text>
+  </g>
+</svg>

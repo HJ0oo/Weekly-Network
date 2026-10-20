@@ -3,7 +3,7 @@
 매주 루틴이 **시작할 때 읽고, 끝날 때 갱신하는** 파일이다.
 목적은 하나: **지난주에 이미 실패한 방법을 이번 주에 다시 시도하느라 시간을 낭비하지 않는 것.**
 
-최종 확인: 2026-09-22
+최종 확인: 2026-10-20
 
 ---
 
@@ -16,7 +16,8 @@
 | arXiv API (export.arxiv.org) | 동작(2026-09-21·09-22 모두 429 없이 성공) | 그래도 1회 시도 후 안 되면 목록 페이지로 전환 |
 | arXiv 목록·초록 페이지 (arxiv.org) | 동작 | WebFetch로 `/list/...?skip=N`, `/abs/ID` |
 | 3GPP (www.3gpp.org) | **직접 접근 차단** | 웹검색으로 대체 — 09-22엔 RAN#113 세부 내용까지 확인 성공 |
-| IITP (itfind.or.kr) | 동작 | WebFetch로 weekly list.do |
+| IITP (itfind.or.kr) | 동작(10-20: 제2222호, 2026-10-07) | WebFetch로 weekly list.do |
+| www.ispreview.co.uk | **WebFetch 불가(ENOTFOUND, 10-20 신규)** | 검색 스니펫으로 확인 |
 | IITP (iitp.kr) | 목록 안 보임(JS) | itfind 쪽을 쓸 것 |
 | IEEE (ieeexplore / comsoc / spectrum) | **차단(5주 연속)** | 1회만 시도, 안 되면 포기 |
 | 국내 언론 일부 (edaily, boannews 등) | **본문 차단** | 검색 스니펫으로 확인 |
